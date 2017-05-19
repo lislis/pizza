@@ -1,0 +1,12 @@
+language: crystal
+
+jobs:
+  include:
+    - stage: build
+      script: crystal build --release src/pizza_server.cr
+    - stage: deploy
+      script: skip
+      deploy: &heroku
+        provider: heroku
+        app: berlin-pizza
+        api_key: $HEROKU_AUTH_TOKEN
