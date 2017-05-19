@@ -4,6 +4,7 @@ require "json"
 
 get "/" do |env|
   env.response.content_type = "application/vnd.api+json"
+  env.response.headers.add "Access-Control-Allow-Origin", "localhost:4200"
   {data: [
     {name: "I Due Forni", address: "Schoenhauser Allee 12, 10119 Berlin, Germany"},
     {name: "Il Ritrovo", address: "Gabriel-Max-Str. 2, 10245 Berlin, Germany"},
