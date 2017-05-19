@@ -3,7 +3,7 @@ language: crystal
 jobs:
   include:
     - stage: build
-      script: crystal build --release src/pizza_server.cr
+      script: crystal build --release src/pizza-server.cr
     - stage: deploy
       script: skip
       deploy: &heroku
