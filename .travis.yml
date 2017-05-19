@@ -17,6 +17,7 @@ jobs:
       deploy:
         provider: npm
         api_key: $NPM_API_KEY
+        email: $EMAIL
         on:
           branch: master
           tags: true
