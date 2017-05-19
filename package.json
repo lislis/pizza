@@ -1,6 +1,6 @@
 {
   "name": "berlin-pizza",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Pizza places in Berlin",
   "bin": {
     "berlin-pizza": "pizza-server"
