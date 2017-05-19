@@ -12,7 +12,7 @@ get "/pizza" do |env|
       kiez: "Pberg"},
      {name: "Il Ritrovo",
       address: "Gabriel-Max-Str. 2, 10245 Berlin, Germany",
-       kiez: "Fhain+Xberg"},
+       kiez: "Fhain-Xberg"},
      {name: "Sfizy Veg",
       address: "Treptower Str. 95, 12059 Berlin, Germany",
       kiez: "Neukölln"
@@ -29,7 +29,7 @@ get "/kieze" do |env|
   {data: [
      {name: "Wedding", long: "technically Mitte"},
      {name: "Pberg", long: "technically Pankow"},
-     {name: "Fhain+Xberg", long: "Friedrichshain-Kreuzberg"},
+     {name: "Fhain-Xberg", long: "Friedrichshain-Kreuzberg"},
      {name: "Neukölln", long: "just Neukölln"}
    ]}.to_json
 end
